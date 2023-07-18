@@ -1,5 +1,6 @@
 const requestFactory = require('cozy-konnector-libs/dist/libs/request')
-const { BASE_URL } = require('./const')
+const { BASE_URLS } = require('./const')
+const BASE_URL = BASE_URLS[providerId]['URL']
 const request = requestFactory({
   cheerio: false,
   json: true,

@@ -32,6 +32,8 @@ const run = async ({ fields, accountData, accountId }) => {
   // TODO: the token might be retrieved directly in the account
   const token = fields.password
 
+  const providerId = fields.providerId
+
   /* Get the trips starting date */
   let startDate
   let startManualDate
